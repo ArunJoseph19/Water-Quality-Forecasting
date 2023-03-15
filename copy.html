@@ -16,8 +16,6 @@
     <meta name="msapplication-tap-highlight" content="no">
 <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body>
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
@@ -358,6 +356,7 @@
                         <span>
                             <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
                                 <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
                                 </span>
                             </button>
                         </span>
@@ -366,46 +365,67 @@
                             <ul class="vertical-nav-menu">
                                 <li>
                                     <a href="index.html" class="mm-active">
+                                        <i class="metismenu-icon pe-7s-rocket"></i>
                                         Water Quality Monitoring 
                                     </a>
                                 </li>
                                 <li class="app-sidebar__heading">Parameters</li>
                                 <li>
                                     <a href="#">
+                                        <i class="metismenu-icon pe-7s-diamond"></i>
                                         pH
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <a href="#">
+                                        <i class="metismenu-icon pe-7s-diamond"></i>
                                         BOD
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <a href="#">
+                                        <i class="metismenu-icon pe-7s-diamond"></i>
                                         Nitrates
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                 </li>
                                 <li class="app-sidebar__heading">Locations</li>
                                 <li>
                                     <a href="#">
+                                        <i class="metismenu-icon pe-7s-diamond"></i>
                                         KRS DAM, BALAMURIKSHETRA
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <a href="#">
+                                        <i class="metismenu-icon pe-7s-diamond"></i>
                                         WATER SUPPLY INTAKE POINT TO MADIKERI
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <a href="#">
+                                        <i class="metismenu-icon pe-7s-diamond"></i>
                                         METTUR
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <a href="#">
+                                        <i class="metismenu-icon pe-7s-diamond"></i>
                                         TRICHY, GRAND ANAICUT,
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                 </li>
                                 <li class="app-sidebar__heading">Sensors</li>
                                 <li>
                                     <a href="#">
+                                        <i class="metismenu-icon pe-7s-diamond"></i>
                                         pH
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <a href="#">
+                                        <i class="metismenu-icon pe-7s-diamond"></i>
                                         BOD
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <a href="#">
+                                        <i class="metismenu-icon pe-7s-diamond"></i>
                                         Nitrates
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -474,7 +494,7 @@
                                     <div class="card-header-tab card-header-tab-animation card-header">
                                         <div class="card-header-title">
                                             <i class="header-icon lnr-apartment icon-gradient bg-love-kiss"> </i>
-                                            Grand Anaicut
+                                            Trend
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -483,8 +503,125 @@
                                                 <div class="card mb-3 widget-chart widget-chart2 text-left w-100">
                                                     <div class="widget-chat-wrapper-outer">
                                                         <div class="widget-chart-wrapper widget-chart-wrapper-lg opacity-10 m-0">
-                                                            <canvas id="canvas456"></canvas>
+                                                            <canvas id="canvas"></canvas>
                                                         </div>
+                                                    </div>
+                                                </div>
+                                                <h6 class="text-muted text-uppercase font-size-md opacity-5 font-weight-normal">Top Authors</h6>
+                                                <div class="scroll-area-sm">
+                                                    <div class="scrollbar-container">
+                                                        <ul class="rm-list-borders rm-list-borders-scroll list-group list-group-flush">
+                                                            <li class="list-group-item">
+                                                                <div class="widget-content p-0">
+                                                                    <div class="widget-content-wrapper">
+                                                                        <div class="widget-content-left mr-3">
+                                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/9.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="widget-content-left">
+                                                                            <div class="widget-heading">Ella-Rose Henry</div>
+                                                                            <div class="widget-subheading">Web Developer</div>
+                                                                        </div>
+                                                                        <div class="widget-content-right">
+                                                                            <div class="font-size-xlg text-muted">
+                                                                                <small class="opacity-5 pr-1">$</small>
+                                                                                <span>129</span>
+                                                                                <small class="text-danger pl-2">
+                                                                                    <i class="fa fa-angle-down"></i>
+                                                                                </small>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="widget-content p-0">
+                                                                    <div class="widget-content-wrapper">
+                                                                        <div class="widget-content-left mr-3">
+                                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/5.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="widget-content-left">
+                                                                            <div class="widget-heading">Ruben Tillman</div>
+                                                                            <div class="widget-subheading">UI Designer</div>
+                                                                        </div>
+                                                                        <div class="widget-content-right">
+                                                                            <div class="font-size-xlg text-muted">
+                                                                                <small class="opacity-5 pr-1">$</small>
+                                                                                <span>54</span>
+                                                                                <small class="text-success pl-2">
+                                                                                    <i class="fa fa-angle-up"></i>
+                                                                                </small>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="widget-content p-0">
+                                                                    <div class="widget-content-wrapper">
+                                                                        <div class="widget-content-left mr-3">
+                                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="widget-content-left">
+                                                                            <div class="widget-heading">Vinnie Wagstaff</div>
+                                                                            <div class="widget-subheading">Java Programmer</div>
+                                                                        </div>
+                                                                        <div class="widget-content-right">
+                                                                            <div class="font-size-xlg text-muted">
+                                                                                <small class="opacity-5 pr-1">$</small>
+                                                                                <span>429</span>
+                                                                                <small class="text-warning pl-2">
+                                                                                    <i class="fa fa-dot-circle"></i>
+                                                                                </small>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="widget-content p-0">
+                                                                    <div class="widget-content-wrapper">
+                                                                        <div class="widget-content-left mr-3">
+                                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/3.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="widget-content-left">
+                                                                            <div class="widget-heading">Ella-Rose Henry</div>
+                                                                            <div class="widget-subheading">Web Developer</div>
+                                                                        </div>
+                                                                        <div class="widget-content-right">
+                                                                            <div class="font-size-xlg text-muted">
+                                                                                <small class="opacity-5 pr-1">$</small>
+                                                                                <span>129</span>
+                                                                                <small class="text-danger pl-2">
+                                                                                    <i class="fa fa-angle-down"></i>
+                                                                                </small>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="widget-content p-0">
+                                                                    <div class="widget-content-wrapper">
+                                                                        <div class="widget-content-left mr-3">
+                                                                            <img width="42" class="rounded-circle" src="assets/images/avatars/2.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="widget-content-left">
+                                                                            <div class="widget-heading">Ruben Tillman</div>
+                                                                            <div class="widget-subheading">UI Designer</div>
+                                                                        </div>
+                                                                        <div class="widget-content-right">
+                                                                            <div class="font-size-xlg text-muted">
+                                                                                <small class="opacity-5 pr-1">$</small>
+                                                                                <span>54</span>
+                                                                                <small class="text-success pl-2">
+                                                                                    <i class="fa fa-angle-up"></i>
+                                                                                </small>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
@@ -497,16 +634,15 @@
                                     <div class="card-header-tab card-header">
                                         <div class="card-header-title">
                                             <i class="header-icon lnr-rocket icon-gradient bg-tempting-azure"> </i>
-                                            KRS Dam
+                                            Bandwidth Reports
                                         </div>
                                     </div>
                                     <div class="tab-content">
                                         <div class="tab-pane fade active show" id="tab-eg-55">
                                             <div class="widget-chart p-3">
                                                 <div style="height: 350px">
-                                                    <canvas id="canvas123"></canvas>
+                                                    <canvas id="line-chart"></canvas>
                                                 </div>
-                                                <!--
                                                 <div class="widget-chart-content text-center mt-5">
                                                     <div class="widget-description mt-0 text-warning">
                                                         <i class="fa fa-arrow-left"></i>
@@ -514,9 +650,7 @@
                                                         <span class="text-muted opacity-8 pl-1">increase in BOD</span>
                                                     </div>
                                                 </div>
-                                                -->
                                             </div>
-                                            <!--
                                             <div class="pt-2 card-body">
                                                 <div class="row">
                                                     <div class="col-md-6">
@@ -596,13 +730,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>-->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--
                         <div class="row">
                             <div class="col-md-6 col-xl-4">
                                 <div class="card mb-3 widget-content">
@@ -673,8 +806,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>-->
-                        <!--
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="main-card mb-3 card">
@@ -806,8 +938,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>-->
-                        <!--
+                        </div>
                         <div class="row">
                             <div class="col-md-6 col-lg-3">
                                 <div class="card-shadow-danger mb-3 widget-chart widget-chart2 text-left card">
@@ -893,187 +1024,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>-->
+                        </div>
                     </div>    
-                </div>
+              	</div>
                 <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         </div>
     </div>
 <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script></body>
-<script>
-  google.charts.load('current', {
-    'packages': ['corechart', 'bar']
-  });
-  google.charts.setOnLoadCallback(initChart);
-
-  function initChart() {
-    URL = "https://docs.google.com/spreadsheets/d/1_zuyJN_M_ta9Exuig3YcEKQKj4FTj0dkQ7_9mYj9EZQ/edit?usp=sharing";
-    var query = new google.visualization.Query(URL);
-    query.setQuery('select *');
-    query.send(function(response) {
-      handleQueryResponse(response);
-    });
-  }
-
-  function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
-
-  function handleQueryResponse(response) {
-    var data = response.getDataTable();
-    var columns = data.getNumberOfColumns();
-    var rows = data.getNumberOfRows();
-    console.log(data.toJSON());
-
-    const colors = ['rgb(54, 162, 235)', 'rgb(255, 99, 132)', 'rgb(75, 192, 192)', 'rgb(255, 206, 86)', 'rgb(153, 102, 255)'];
-    dataj = JSON.parse(data.toJSON());
-    console.log(dataj.cols[0].label);
-    const labels = [];
-    for (c = 1; c < dataj.cols.length; c++) {
-      if (dataj.cols[c].label != "") {
-        labels.push(dataj.cols[c].label);
-      }
-
-    }
-    console.log(labels);
-    const datasets = [];
-    for (i = 0; i < dataj.rows.length; i++) {
-      const series_data = [];
-      for (j = 1; j < dataj.rows[i].c.length; j++) {
-        if (dataj.rows[i].c[j] != null) {
-          if (dataj.rows[i].c[j].v != null) {
-            series_data.push(dataj.rows[i].c[j].v);
-          } else {
-            series_data.push(0);
-          }
-        }
-
-      }
-      var dataset = {
-        label: dataj.rows[i].c[0].v,
-        borderColor: getRandomColor(),
-        backgroundColor: 'transparent',
-        data: series_data
-      }
-
-      datasets.push(dataset);
-
-    }
-    console.log(datasets);
-
-    const chartdata = {
-      labels: labels,
-      datasets: datasets
-    };
-    var canvas = document.getElementById("canvas123");
-    var setup = {
-      type: 'line',
-      data: chartdata,
-      options: {
-        plugins: {
-          title: {
-            display: true,
-            text: dataj.cols[0].label
-          }
-        },
-        responsive: true,
-      }
-    }
-    chart = new Chart(canvas, setup);
-
-  }
-</script>
-<script>
-  google.charts.load('current', {
-    'packages': ['corechart', 'bar']
-  });
-  google.charts.setOnLoadCallback(initChart);
-
-  function initChart() {
-    URL = "https://docs.google.com/spreadsheets/d/1pWzWyAg456kBbF0Iez8y5Ada-dN9wfgnmNxPpsflopw/edit?usp=sharing";
-    var query = new google.visualization.Query(URL);
-    query.setQuery('select *');
-    query.send(function(response) {
-      handleQueryResponse12(response);
-    });
-  }
-
-  function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
-
-  function handleQueryResponse12(response) {
-    var data = response.getDataTable();
-    var columns = data.getNumberOfColumns();
-    var rows = data.getNumberOfRows();
-    console.log(data.toJSON());
-
-    const colors = ['rgb(54, 162, 235)', 'rgb(255, 99, 132)', 'rgb(75, 192, 192)', 'rgb(255, 206, 86)', 'rgb(153, 102, 255)'];
-    dataj = JSON.parse(data.toJSON());
-    console.log(dataj.cols[0].label);
-    const labels = [];
-    for (c = 1; c < dataj.cols.length; c++) {
-      if (dataj.cols[c].label != "") {
-        labels.push(dataj.cols[c].label);
-      }
-
-    }
-    console.log(labels);
-    const datasets = [];
-    for (i = 0; i < dataj.rows.length; i++) {
-      const series_data = [];
-      for (j = 1; j < dataj.rows[i].c.length; j++) {
-        if (dataj.rows[i].c[j] != null) {
-          if (dataj.rows[i].c[j].v != null) {
-            series_data.push(dataj.rows[i].c[j].v);
-          } else {
-            series_data.push(0);
-          }
-        }
-
-      }
-      var dataset = {
-        label: dataj.rows[i].c[0].v,
-        borderColor: getRandomColor(),
-        backgroundColor: 'transparent',
-        data: series_data
-      }
-
-      datasets.push(dataset);
-
-    }
-    console.log(datasets);
-
-    const chartdata = {
-      labels: labels,
-      datasets: datasets
-    };
-    var canvas = document.getElementById("canvas456");
-    var setup = {
-      type: 'line',
-      data: chartdata,
-      options: {
-        plugins: {
-          title: {
-            display: true,
-            text: dataj.cols[0].label
-          }
-        },
-        responsive: true,
-      }
-    }
-    chart = new Chart(canvas, setup);
-
-  }
-</script>
 </html>
