@@ -13,4 +13,11 @@ In this study we compare the ARIMA (autoregressive, integrated, moving average) 
 generate and forecast the quality of river water. Root Mean Squared Error (RMSE) criteria shall 
 be used for evaluating the generation and forecasting results.
 
-Find our Dashboard here: [WQFOR]([https://pages.github.com/](https://arunjoseph19.github.io/Water-Quality-Forecasting/))
+Find our Dashboard here: [WQFOR](https://arunjoseph19.github.io/Water-Quality-Forecasting/)
+
+Authors of this Repository: <br>
+[Arun Joseph](https://www.linkedin.com/in/arun-josephraj/)<br>
+[Gowtham Senthil](https://www.linkedin.com/in/gowtham-senthil/)<br>
+[Ananya Malagi](https://www.linkedin.com/in/ananyamalagi/)<br>
+[Jonathan Clyde Dsilva](https://www.linkedin.com/in/jonathan-clyde-dsilva-26939a187/)<br>
+Affliated to: [BMS Institute of Technology & Management](https://bmsit.ac.in/)
