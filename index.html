@@ -26,6 +26,113 @@
   margin-right: auto;
   width: 100%;
 }
+.box {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 20px 50px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+  font: 16px/24px Arial, sans-serif;
+  background-color: #4973ff;
+  transition: 
+    box-shadow 0.4s ease, 
+    background-color 0.4s ease, 
+    color 0.4s ease;
+  box-shadow: 
+    0 0 2px 0 rgba(73, 115, 255, .1), 
+    0 0 4px 0 rgba(73, 115, 255, .2), 
+    0 0 6px 0 rgba(73, 115, 255, .3), 
+    0 0 8px 0 rgba(73, 115, 255, .4),
+    0 0 12px 0 rgba(73, 115, 255, .5), 
+    0 0 18px 0 rgba(73, 115, 255, .6);
+}
+
+.box:hover{
+  background-color: #ea3c;
+  box-shadow: 
+    0 0 2px 0 rgba(238, 170, 51, 0.1), 
+    0 0 4px 0 rgba(238, 170, 51, 0.2), 
+    0 0 6px 0 rgba(238, 170, 51, 0.3), 
+    0 0 8px 0 rgba(238, 170, 51, 0.4),
+    0 0 12px 0 rgba(238, 170, 51, 0.5), 
+    0 0 18px 0 rgba(238, 170, 51, 0.6),
+    0 0 4px 0 rgba(238, 170, 51, 0.7);
+}
+
+.box span {
+  color: #fff;
+  letter-spacing: 8px;
+}
+
+.box i {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 200px;
+  background-color: inherit;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 
+    transform 0.4s linear, 
+    top 1s linear;
+  overflow: hidden;
+}
+
+.box i:before,
+.box i:after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+.box i:before {
+  border-radius: 46%;
+  background-color: rgba(20, 20, 20, 0.2);
+  animation: animate 5s linear infinite;
+}
+.box i:after {
+  border-radius: 40%;
+  background-color: rgba(20, 20, 20, 0.5);
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: 
+      translate(-50%, -75%) 
+      rotate(0deg);
+  }
+  100% {
+    transform: 
+      translate(-50%, -75%) 
+      rotate(360deg);
+  }
+}
+a:link {
+      text-decoration: none;
+}
+
+a:visited {
+      text-decoration: none;
+}
+
+a:hover {
+      text-decoration: none;
+}
+
+a:active {
+      text-decoration: none;
+}
 </style>
 <body>
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
@@ -467,10 +574,34 @@
                         <div class="row">
                             <div class="col-md-12 col-lg-6">
                                 <div class="mb-3 card">
+                                    <div>
+                                        <a href="#old" class="box">
+                                        <span>Historical Data</span>
+                                            <i></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                                <div class="mb-3 card">
+                                    <div>
+                                        <a href="#new" class="box">
+                                        <span>Sensor Data</span>
+                                            <i></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <section id="old">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                                <div class="mb-3 card">
                                     <div class="card-header-tab card-header-tab-animation card-header">
                                         <div class="card-header-title">
                                             <i class="header-icon lnr-apartment icon-gradient bg-love-kiss"> </i>
-                                            Grand Anaicut
+                                            Grand Anaicut Historical Data
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -493,7 +624,7 @@
                                     <div class="card-header-tab card-header-tab-animation card-header">
                                         <div class="card-header-title">
                                             <i class="header-icon lnr-apartment icon-gradient bg-love-kiss"> </i>
-                                            KRS Dam
+                                            KRS Dam Historical Data
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -512,12 +643,13 @@
                                 </div>
                             </div>
                         </div>
+                        </section>
                         <div>
                             <div class="mb-3 card">
                                 <div class="card-header-tab card-header-tab-animation card-header">
                                     <div class="card-header-title">
                                         <i class="header-icon lnr-apartment icon-gradient bg-love-kiss"> </i>
-                                        ARIMA vs RNN Results
+                                        ARIMA vs RNN Results Historical Data
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -558,6 +690,7 @@
                                 </div>
                             </div>
                         </div>
+                        <section id="new">
                         <div>
                             <div class="mb-3 card">
                                 <div class="card-header-tab card-header-tab-animation card-header">
@@ -575,6 +708,30 @@
                                                         <iframe width=47% height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2128961/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=pH&type=line"></iframe>
                                                         <iframe width=47% height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2128961/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Turbidity&type=line"></iframe>
                                                         <iframe width=47% height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2128961/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Total+Dissolved+Salts&type=line"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                        <div>
+                            <div class="mb-3 card">
+                                <div class="card-header-tab card-header-tab-animation card-header">
+                                    <div class="card-header-title">
+                                        <i class="header-icon lnr-apartment icon-gradient bg-love-kiss"> </i>
+                                        ARIMA vs RNN Results Sensor
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="tabs-eg-77">
+                                            <div class="card mb-3 widget-chart widget-chart2 text-left w-100">
+                                                <div class="widget-chat-wrapper-outer">
+                                                    <div class="widget-chart-wrapper widget-chart-wrapper-lg opacity-10 m-0">
+                                                        <img class=center src="Results Sensor.jpg">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1079,5 +1236,14 @@
     chart = new Chart(canvas, setup);
 
   }
+
+function ShowAndHide() {
+    var x = document.getElementById('old');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
 </script>
 </html>
